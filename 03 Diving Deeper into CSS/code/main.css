@@ -21,8 +21,9 @@ body {
     width: 100%;
     height: 528px;
     padding: 10px;
-    border: 4px solid black;
-    margin: 10px;
+
+    /*border: 4px solid black;*/
+    /*margin: 10px;*/
 
     /* not including padding and border*/
     /*box-sizing: content-box;*/
@@ -52,3 +53,32 @@ body {
 /* h1 {
     font-family: sans-serif;
 } */
+
+.main-header {
+    background-color: #2ddf5c;
+    width: 100%;
+    padding: 8px 16px;
+    /*margin-bottom: 20px;*/
+
+}
+
+.main-header > div {
+    display: inline-block;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    /*width: 100%;*/
+    width: calc(100% - 54px);
+}
+
+.main-nav__items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
