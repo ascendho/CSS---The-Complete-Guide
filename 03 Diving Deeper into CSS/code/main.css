@@ -15,7 +15,10 @@ body {
 }
 
 #product-overview {
-    background: #ff1b68;
+    /*background: #ff1b68;*/
+
+    /* Background image */
+    background: url("freedom.jpg");
 
     /* take 50% space compare to the parent element, here is main element */
     width: 100%;
@@ -108,6 +111,9 @@ body {
 .main-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+
 }
 
 /*.main-nav__item a::after{*/
@@ -115,17 +121,30 @@ body {
 /*    color: red;*/
 /*}*/
 
-/* Pseudo Classes */
-.main-nav__item a:hover {
-    color: white;
-}
-
+/* Pseudo Classes and Grouping Rules */
+.main-nav__item a:hover,
 .main-nav__item a:active {
     color: white;
+    border-bottom: 5px solid white;
 }
+
 
 /* Pseudo Elements*/
 /*p::first-letter{*/
 /*    color: red;*/
 /*    font-size: 20px;*/
 /*}*/
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
